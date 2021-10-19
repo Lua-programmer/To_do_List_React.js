@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Pacifico&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+.home > h1{
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+body{
+  background-image: radial-gradient(circle at 50% -20.71%, #cad7f9 0, #d0d6f9 6.25%, #d5d4f7 12.5%, #dbd3f5 18.75%, #e0d2f3 25%, #e5d0f0 31.25%, #eacfed 37.5%, #eecee9 43.75%, #f2cde5 50%, #f5cce1 56.25%, #f8ccdc 62.5%, #facbd8 68.75%, #fbcbd3 75%, #fccccf 81.25%, #fccccb 87.5%, #fcccc7 93.75%, #fbcdc3 100%);
+}
+
+.app{
+
+  min-height: 100vh;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}

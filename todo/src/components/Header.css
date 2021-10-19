@@ -1,0 +1,15 @@
+.header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .options {
+    font-size: 1rem;
+    font-family: "Pacifico", cursive;
+  }
+  
+  .nav-link {
+    color: rgb(97, 96, 96);
+  }
