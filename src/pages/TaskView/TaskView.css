@@ -1,0 +1,24 @@
+.a { 
+    text-decoration: none; 
+    color: white;
+}
+.a:visited { 
+    text-decoration: none;
+ }
+.a:hover { 
+    text-decoration: none;
+    color: white; 
+}
+.a:focus { 
+    text-decoration: none;
+ }
+.a:hover, .a:active { 
+    text-decoration: none; 
+}
+
+.b{
+    background-color: transparent;
+    border: none;
+    color:white;
+    margin-left: 10px
+}

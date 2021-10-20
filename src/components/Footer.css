@@ -15,4 +15,10 @@ footer > a {
     width: 100%;
     color: rgb(97, 96, 96);
     font-family: "Pacifico", cursive;
+    margin-top: 32px
+  }
+
+  footer > a:hover{
+    text-decoration: none;
+    color: rgb(97, 96, 96);
   }

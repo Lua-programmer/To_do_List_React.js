@@ -9,7 +9,7 @@ function Footer() {
     <footer className="footer">
       Developed by : Luana Melissa{" "}
       <a target="_blanck" href="https://github.com/Lua-programmer">
-        <AiFillGithub />
+        <AiFillGithub  />
       </a>{" "}
       <a
         target="_blanck"

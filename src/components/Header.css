@@ -12,4 +12,9 @@
   
   .nav-link {
     color: rgb(97, 96, 96);
+
+  }
+
+  .nav-link:hover{
+    color: rgb(97, 96, 96);
   }

@@ -4,29 +4,23 @@ import Api from "../../api/api";
 const Edicao = (props) => {
   const _id = props.match.params.id;
   const history = props.history;
-  // criacao do estado
   const [task, setTask,] = useState({});
 
-  // o use effect chama a funcao getById que retorna o objeto do backend de acordo com o id
   useEffect(() => {
-    getTaskById();
-  }, []);
 
-  const getTaskById = async () => {
-    // faz uma chamada para api para pegar o objeto de acordo com o id.
-    const response = await Api.fetchGetById(_id);
-    const result = await response.json();
-    // atualizo o meu estado de acordo com o resultado.
-    setTask(result);
-  };
+    const getTaskById = async () => {
+      const response = await Api.fetchGetById(_id);
+      const result = await response.json();
+      setTask(result);
+    };
+
+    getTaskById();
+
+  }, [_id]);
 
   const handleFieldsChange = (event) => {
-    // clono meu objeto do estado
     const campos = { ...task };
-    // para cada input eu atualizo o seu respectivo valor no obj
     campos[event.target.name] = event.target.value;
-
-    // atualizo o meu estado com esse novo objeto.
     setTask(campos);
   };
 
@@ -39,7 +33,7 @@ const Edicao = (props) => {
       const response = await Api.fetchPut(taskObj, _id);
       const result = await response.json();
       alert(result.message);
-      history.push("/"); // forca o historico a voltar para a rota de / => home
+      history.push("/");
     } catch (error) {
       console.log(error);
     }
@@ -47,90 +41,101 @@ const Edicao = (props) => {
 
   return (
     <div className="container cadastro">
-      <div className="card mt-4">
+      <div className="base mt-4">
         <div className="card-title">
           <div className="row">
-            <div className="col">
-              <h3>Edicao da Vagaa</h3>
+            <div className="col subtitle ">
+              <h3>Edit Task</h3>
             </div>
           </div>
         </div>
         <div className="card-body">
-          <form onSubmit={handleSubmit}>
-            <div className="row">
-              <div className="col">
-                <div className="form-floating mb-3">
-                  <input
-                    type="text"
-                    value={task.title}
-                    className="form-control"
-                    name="titulo"
-                    id="floatingInput"
-                    placeholder="Digite o Titulo"
-                    onChange={handleFieldsChange}
-                  />
-                  <label htmlFor="floatingInput">Titulo</label>
-                </div>
-              </div>
-              <div className="col">
-                <div className="form-floating">
-                  <input
-                    type="text"
-                    value={task.description}
-                    className="form-control"
-                    name="salario"
-                    id="floatingsalario"
-                    placeholder="Digite o Salario"
-                    onChange={handleFieldsChange}
-                  />
-                  <label htmlFor="floatingsalario">Salario</label>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col">
-                <div className="form-floating mb-3">
-                  <input
-                    type="text"
-                    value={task.priority}
-                    className="form-control"
-                    name="descricao"
-                    id="floatingInput"
-                    placeholder="Digite a Descricao"
-                    onChange={handleFieldsChange}
-                  />
-                  <label htmlFor="floatingInput">Descricao</label>
-                </div>
-              </div>
-              <div className="col">
-                <div className="form-floating">
-                  <select value={task.status}
-                    className="form-control"
-                    name="senioridade"
-                    id="floatingsenioridade"
-                    onChange={handleFieldsChange}
-                    >
-                    <option value="junior">Junior</option>
-                    <option value="pleno">pleno</option>
-                    <option value="senior">senior</option>
-                  </select>
-                  <label htmlFor="floatingsenioridade">Senioridade</label>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col">
-                <button className="btn btn-success" type="submit">
-                  Enviar
-                </button>
-                <button className="btn btn-outline-default">Voltar</button>
-              </div>
-            </div>
-          </form>
+        <form className="todo-form mt-5" onSubmit={handleSubmit}>
+      
+      <>
+      <div className="row">
+        <div className="col md-6 mt-2">
+          <label>Tarefa: </label>
+          <input
+          value={task.title}
+            type="text"
+            className="todo-input"
+            placeholder="Adicione uma nova tarefa"
+            name="title"
+            id="title"
+            onChange={handleFieldsChange}
+          />
+        </div>
+
+        <div className="col md-6 mt-2">
+          <label>Descrição: </label>
+          <input
+          value={task.description}
+            type="text"
+            className="todo-input"
+            placeholder="Descreva sua tarefa"
+            name="description"
+            id="description"
+            onChange={handleFieldsChange}
+          />
+        </div>
+
+        <div className="col md-6 mt-2">
+          <label>Prioridade: </label>
+          <select
+           
+            className="todo-input"
+            name="priority"
+            id="priority"
+            value={task.priority}
+            onChange={handleFieldsChange}
+          >
+            <option value="vazio"></option>
+            <option value="Baixa">Baixa</option>
+            <option value="Media">Média</option>
+            <option value="Alta">Alta</option>
+          </select>
+        </div>
+
+        <div className="col md-6 mt-4">
+          <label>Status: </label>
+          <select
+            
+            className="todo-input"
+            name="status"
+            value={task.status}
+            id="status"
+            onChange={handleFieldsChange}
+          >
+            <option value="vazio"></option>
+            <option value="Fazendo">Fazendo</option>
+            <option value="Fazer">Fazer</option>
+          </select>
+        </div>
+        
+        <div className="col md-6 mt-4">
+          <label>Prazo: </label>
+          <input className="todo-input" value={task.deadline} type="date" id="data" onChange={handleFieldsChange} name="deadline" maxlength="10" size="" />
+        </div>
+
+      </div>
+
+      <div className="row">
+        <div className="mt-5">
+         <button className="todo-button" type="submit" >Editar</button>
+         <button href=" /" className="todo-button"  >Voltar</button>
+        </div>
+      </div>
+
+      </>
+      
+
+   
+  </form>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default Edicao;
