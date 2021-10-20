@@ -22,11 +22,11 @@ function Header() {
                 <Link to="/" class="nav-link">Home</Link>
             </li>
             <li class="nav-item">
-                <Link to="/registration" class="nav-link">New To-do</Link>
+                <Link to="/cadastro" class="nav-link">New To-do</Link>
             </li>
-            <li class="nav-item">
+            {/* <li class="nav-item">
                 <Link class="nav-link">To-do List</Link>
-            </li>
+            </li> */}
             </ul>
         </div>
    

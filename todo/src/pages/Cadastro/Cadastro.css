@@ -1,0 +1,50 @@
+
+  .todo-form {
+    margin-bottom: 32px;
+    color: rgb(97, 96, 96);
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+  }
+
+  .todo-input {
+    padding: 14px 25px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #e708e7;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: rgb(77, 74, 74);
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+
+  }
+  
+  .todo-button {
+    padding:14px 16px 14px 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      rgb(235, 12, 255) 0%,
+      rgb(126, 2, 143) 100%
+    );
+    color: #fff;
+    text-transform: capitalize;
+    
+  }
+
+  .subtitle > h3{
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(97, 96, 96);
+  }
+
+  .base{
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+  }
+
+  

@@ -10,7 +10,7 @@ footer > a {
     padding-bottom: 5px;
     display: flex;
     justify-content: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     color: rgb(97, 96, 96);
