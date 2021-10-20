@@ -22,3 +22,10 @@
     color:white;
     margin-left: 10px
 }
+
+.modal{
+    background-color: rgba(97, 96, 96, 0.4);
+    font-size: 1rem;
+    font-family: "Pacifico", cursive;
+    color: #fff
+}
