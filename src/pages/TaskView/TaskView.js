@@ -37,9 +37,9 @@ function TaskView(props) {
 
 
   return (
-    <div className="container col-3 flex-grow-2 ">
-     <div className=" ">
-        <div className="card-body notes p-10">
+    <div className="col m-3 flex-grow-2">
+     <div className="">
+        <div className="card-body notes">
           <h5 className="nt">{ task.title }</h5>
           <span>Descrição: { task.description }</span><br/>
           <span>Prioridade: { task.priority }</span><br/>
