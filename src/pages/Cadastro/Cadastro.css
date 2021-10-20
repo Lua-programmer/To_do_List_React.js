@@ -1,7 +1,7 @@
 
   .todo-form {
     margin-bottom: 32px;
-    color: rgb(97, 96, 96);
+    color: #383838;
     font-family: 'Pacifico', cursive;
     font-size: 1.2rem;
   }
@@ -13,7 +13,7 @@
     outline: none;
     width: 320px;
     background: transparent;
-    color: rgb(77, 74, 74);
+    color: rgb(97, 96, 96);
     font-family: 'Pacifico', cursive;
     font-size: 1.2rem;
 
@@ -29,9 +29,9 @@
     background: linear-gradient(
       90deg,
       rgb(235, 12, 255) 0%,
-      rgb(126, 2, 143) 100%
+      rgb(126, 2, 143) 150%
     );
-    color: #fff;
+    color: #383838;
     text-transform: capitalize;
     
   }
@@ -39,11 +39,11 @@
   .subtitle > h3{
     font-size: 3rem;
     font-family: 'Dancing Script', cursive;
-    color: rgb(97, 96, 96);
+    color: #383838;
   }
 
   .base{
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.1);
       border-radius: 10px;
   }
 
