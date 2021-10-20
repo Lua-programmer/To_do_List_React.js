@@ -24,11 +24,26 @@
 }
 
 .react-responsive-modal-modal{
-    background: rgb(163, 155, 155);
-    font-size: 0.8rem;
     font-family: "Pacifico", cursive;
-    color: rgb(163, 155, 155)
-
 }
 
+.react-responsive-modal-modal > h2 {
+   color: #383838;
+   font-size: 2rem;
+   margin-top: 15px;
+}
 
+.btn {
+    background: linear-gradient(
+      90deg,
+      rgb(235, 12, 255) 0%,
+      rgb(126, 2, 143) 150%
+    );
+    color: #383838;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #383838;
+}

@@ -56,9 +56,9 @@ function TaskView(props) {
 </svg></button>
           </div>
           <Modal className="modal" open={open} onClose={onCloseModal} center>
-            <h2>Deseja realmente Excluir</h2>
-            <button className="btn btn-danger" onClick={onCloseModal}>Não</button>
-            <button className="btn btn-success" onClick={handleDelete}>Sim</button>
+            <h2>Deseja realmente excluir</h2>
+            <button className="btn" onClick={onCloseModal}>Não</button>
+            <button className="btn" onClick={handleDelete}>Sim</button>
           </Modal>
         </div>
       </div>
