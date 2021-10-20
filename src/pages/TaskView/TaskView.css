@@ -23,9 +23,12 @@
     margin-left: 10px
 }
 
-.modal{
-    background-color: rgba(97, 96, 96, 0.4);
-    font-size: 1rem;
+.react-responsive-modal-modal{
+    background: rgb(163, 155, 155);
+    font-size: 0.8rem;
     font-family: "Pacifico", cursive;
-    color: #fff
+    color: rgb(163, 155, 155)
+
 }
+
+
