@@ -25,7 +25,7 @@ const Cadastro = (props) => {
     try {
       const response = await Api.fetchPost(task)
       const result = await response.json();
-      alert(result.message('Tarefa adicionada com sucesso!'));
+      alert(result.message);
       history.push('/');
     } catch(error) {
       console.log(error);
