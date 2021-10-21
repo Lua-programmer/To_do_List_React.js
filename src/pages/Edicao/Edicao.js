@@ -108,6 +108,7 @@ const Edicao = (props) => {
             onChange={handleFieldsChange}
           >
             <option value="vazio"></option>
+            <option value="Feito">Feito</option>
             <option value="Fazendo">Fazendo</option>
             <option value="Fazer">Fazer</option>
           </select>

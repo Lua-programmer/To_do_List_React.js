@@ -94,6 +94,7 @@ const Cadastro = (props) => {
             id="status"
           >
             <option value="vazio"></option>
+            <option value="Feito">Feito</option>
             <option value="Fazendo">Fazendo</option>
             <option value="Fazer">Fazer</option>
           </select>
