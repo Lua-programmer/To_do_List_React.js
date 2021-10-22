@@ -124,7 +124,7 @@ const Edicao = (props) => {
       <div className="row">
         <div className="mt-5">
          <button className="todo-button" type="submit" >Editar</button>
-         <button href=" /" className="todo-button"  >Voltar</button>
+         <button href="/view/:id" className="todo-button" >Voltar</button>
         </div>
       </div>
 
