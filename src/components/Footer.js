@@ -20,7 +20,7 @@ function Footer() {
       </a>{" "}
       <a
         target="_blanck"
-        href="https://github.com/Lua-programmer/Portfolio_responsivo"
+        href="https://lua-programmer.herokuapp.com/"
       >
         <FaPaste />
       </a>
