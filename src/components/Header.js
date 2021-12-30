@@ -8,7 +8,7 @@ function Header() {
       <nav class="navbar navbar-light">
         <div class="container-fluid">
           <img
-            src="https://i.ibb.co/z42DTYm/logo.png"
+            src="https://i.ibb.co/GV6vS0W/Logo.png"
             alt="logo"
             width="200"
             height="60"
