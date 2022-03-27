@@ -8,24 +8,24 @@ function Footer() {
   return (
     <footer className="footer">
       Developed by : Luana Melissa{" "}
-      <a target="_blanck" href="https://github.com/Lua-programmer">
+      <a target="_blank" href="https://github.com/Lua-programmer">
         <AiFillGithub  />
       </a>{" "}
       <a
-        target="_blanck"
+        target="_blank"
         href="https://www.linkedin.com/in/luana-melissa-473208207/"
       >
         {" "}
         <FaLinkedinIn />{" "}
       </a>{" "}
       <a
-        target="_blanck"
+        target="_blank"
         href="https://lua-programmer.herokuapp.com/"
       >
         <FaPaste />
       </a>
       <a
-        target="_blanck"
+        target="_blank"
         href="https://www.instagram.com/luana.melissa/"
       >
         <RiInstagramFill />
